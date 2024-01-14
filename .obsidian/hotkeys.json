@@ -1,0 +1,202 @@
+{
+  "markdown-importer:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "/"
+    }
+  ],
+  "editor:open-search-replace": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "R"
+    }
+  ],
+  "editor:insert-codeblock": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ],
+  "editor:insert-link": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "L"
+    }
+  ],
+  "editor:toggle-checklist-status": [],
+  "editor:insert-mathblock": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "M"
+    }
+  ],
+  "outline:open-for-current": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": ","
+    }
+  ],
+  "editor:toggle-code": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "."
+    }
+  ],
+  "theme:use-dark": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "D"
+    }
+  ],
+  "editor:toggle-bullet-list": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "]"
+    }
+  ],
+  "editor:toggle-numbered-list": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "["
+    }
+  ],
+  "editor:swap-line-up": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "editor:swap-line-down": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "open-with-default-app:show": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F"
+    }
+  ],
+  "editor:fold-more": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "\\"
+    }
+  ],
+  "workspace:split-vertical": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
+  ],
+  "app:reload": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": ";"
+    }
+  ],
+  "obsidian-kanban:open-board-settings": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "K"
+    }
+  ],
+  "editor:set-heading-1": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "1"
+    }
+  ],
+  "editor:set-heading-2": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "2"
+    }
+  ],
+  "editor:set-heading-3": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "3"
+    }
+  ],
+  "editor:set-heading-4": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "4"
+    }
+  ],
+  "editor:set-heading-5": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "5"
+    }
+  ],
+  "editor:set-heading-6": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "6"
+    }
+  ],
+  "theme:use-light": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "L"
+    }
+  ]
+}

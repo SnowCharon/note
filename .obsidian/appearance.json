@@ -1,0 +1,15 @@
+{
+  "accentColor": "",
+  "theme": "moonstone",
+  "interfaceFontFamily": "JetBrains Mono",
+  "textFontFamily": "宋体",
+  "monospaceFontFamily": "JetBrains Mono",
+  "translucency": false,
+  "cssTheme": "Things",
+  "enabledCssSnippets": [
+    "header",
+    "Draucal"
+  ],
+  "baseFontSize": 16,
+  "baseFontSizeAction": false
+}

@@ -1,0 +1,23 @@
+{
+  "vimMode": false,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "./assets",
+  "alwaysUpdateLinks": true,
+  "showLineNumber": true,
+  "promptDelete": false,
+  "newFileLocation": "current",
+  "showUnsupportedFiles": false,
+  "userIgnoreFilters": [
+    "database/assets/",
+    "front side/assets/",
+    "obsidian/assets/",
+    "经验总结/assets/",
+    "computer/assets/",
+    "java/JVM/assets/",
+    "java/JavaEE/picture/",
+    "java/JavaSE/assets/",
+    "java/spring6课件/images/"
+  ],
+  "readableLineLength": false
+}
