@@ -42,14 +42,6 @@
       "key": "M"
     }
   ],
-  "outline:open-for-current": [
-    {
-      "modifiers": [
-        "Shift"
-      ],
-      "key": ","
-    }
-  ],
   "editor:toggle-code": [
     {
       "modifiers": [
@@ -107,14 +99,6 @@
         "Alt"
       ],
       "key": "F"
-    }
-  ],
-  "editor:fold-more": [
-    {
-      "modifiers": [
-        "Alt"
-      ],
-      "key": "\\"
     }
   ],
   "workspace:split-vertical": [
@@ -197,6 +181,55 @@
         "Shift"
       ],
       "key": "L"
+    }
+  ],
+  "obsidian-emoji-toolbar:emoji-picker:open-picker": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "outline:open-for-current": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "\\"
+    }
+  ],
+  "editor:fold-more": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "\\"
+    }
+  ],
+  "insert-template": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Insert"
+    }
+  ],
+  "insert-current-time": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "D"
+    }
+  ],
+  "obsidian-annotator:toggle-annotation-mode": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "P"
     }
   ]
 }

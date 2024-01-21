@@ -7,7 +7,7 @@
   "showLineNumber": true,
   "promptDelete": false,
   "newFileLocation": "current",
-  "showUnsupportedFiles": false,
+  "showUnsupportedFiles": true,
   "userIgnoreFilters": [
     "database/assets/",
     "front side/assets/",

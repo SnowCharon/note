@@ -6,9 +6,9 @@
   "obsidian-tasks-plugin",
   "templater-obsidian",
   "quickadd",
-  "obsidian-day-planner",
   "better-word-count",
   "obsidian-emoji-toolbar",
   "omnisearch",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "obsidian-minimal-settings"
 ]

@@ -1,7 +1,10 @@
 {
-  "things-style@@mobile-black-background": false,
-  "things-style@@active-line": true,
+  "things-style@@fancy-code": true,
   "things-style@@fancy-highlight": true,
   "things-style@@no-kanban-styles": false,
-  "things-style@@default-font-color": true
+  "things-style@@mobile-black-background": false,
+  "things-style@@floating-button-off": false,
+  "things-style@@default-font-color": false,
+  "things-style@@text-highlight-bg-l": "#30DAFF",
+  "things-style@@active-line": true
 }
