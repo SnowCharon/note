@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "27e0ff2a18f29bca",
+        "id": "9dff784e1d2fb0ec",
         "type": "tabs",
         "children": [
           {
-            "id": "b1fb598d124ff87f",
+            "id": "7e78882e8d757bd8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "english/soundmark/soundmark.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -28,16 +32,6 @@
         "id": "a94853100bb8b45c",
         "type": "tabs",
         "children": [
-          {
-            "id": "7e78882e8d757bd8",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
           {
             "id": "65433080092ade52",
             "type": "leaf",
@@ -60,13 +54,33 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "c8390bbd0fcdf03b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "english/soundmark/soundmark.md"
+              }
+            }
+          },
+          {
+            "id": "80154f3ee8e4cae9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 245.5,
-    "collapsed": true
+    "width": 245.5
   },
   "right": {
     "id": "30dd81d4e13afc35",
@@ -82,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "english/soundmark/soundmark.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "english/soundmark/soundmark.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "english/soundmark/soundmark.md"
+              }
             }
           },
           {
@@ -129,17 +147,9 @@
               "type": "calendar",
               "state": {}
             }
-          },
-          {
-            "id": "f6778d9336829a70",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -158,47 +168,51 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "omnisearch:Omnisearch": false,
-      "workspaces:管理工作区布局": false
+      "workspaces:管理工作区布局": false,
+      "audio-recorder:开始/结束录音": false
     }
   },
-  "active": "b1fb598d124ff87f",
+  "active": "7e78882e8d757bd8",
   "lastOpenFiles": [
-    "computer/algorithm/程序员的数学.pdf",
+    "english/soundmark/assets/Recording 20240201025229.webm",
+    "english/soundmark/assets/Recording 20240201025156.webm",
+    "english/soundmark/assets/Recording 20240201025134.webm",
+    "english/soundmark/assets/Recording 20240201025110.webm",
+    "english/soundmark/assets/Recording 20240201025029.webm",
+    "english/soundmark/assets/Recording 20240201024959.webm",
+    "english/soundmark/assets/Recording 20240201024921.webm",
+    "english/soundmark/assets/Recording 20240201024857.webm",
+    "english/soundmark/assets/Recording 20240201024826.webm",
+    "english/soundmark/assets/Recording 20240201024807.webm",
+    "english/soundmark/assets/Recording 20240201024748.webm",
+    "english/soundmark/soundmark.md",
+    "english/tips/tip.md",
+    "template/soundmark.md",
+    "template/english.md",
+    "english/soundmark/assets/Pasted image 20240201015636.png",
+    "english/soundmark/assets/Pasted image 20240201015252.png",
+    "english/soundmark/assets/Pasted image 20240201015249.png",
+    "english/grammar/grammar.md",
+    "english/word/word.md",
     "computer/algorithm/algorithm.md",
+    "computer/algorithm/assets/quickSort.gif",
+    "computer/algorithm/assets/Pasted image 20240122224808.png",
+    "computer/algorithm/assets/heapSort.gif",
+    "computer/algorithm/assets/Sorting_heapsort_anim.gif",
+    "computer/algorithm/assets/mergeSort.gif",
+    "computer/algorithm/assets/Sorting_shellsort_anim.gif",
     "computer/algorithm/assets/Pasted image 20240122000627.png",
-    "computer/algorithm/assets/Pasted image 20240121235847.png",
-    "computer/algorithm/assets/Pasted image 20240121233201.png",
-    "computer/algorithm/assets/Pasted image 20240121220247.png",
     "computer/计算机网络.md",
-    "computer/algorithm/assets/selectionSort.gif",
-    "computer/algorithm/assets/bubbleSort.gif",
-    "computer/algorithm/assets/Pasted image 20240121133456.png",
-    "computer/algorithm/assets/Pasted image 20240121133433.png",
-    "computer/algorithm/assets/Pasted image 20240121133230.png",
     "java/Java学习路线.md",
     "2024-01-20.md",
     "2024-01-21.md",
-    "english/word/word.md",
-    "english/tips/tip.md",
-    "english/grammar/grammar.md",
-    "english/tips",
-    "english/grammar",
     "english/未命名.md",
-    "template/english.md",
     "2024-01-19.md",
-    "template",
-    "english/word",
-    "english",
-    "computer/algorithm/assets/317e53188f69fa8498f219f1125167c.jpg",
-    "computer/algorithm/assets",
-    "computer/algorithm",
     "computer/计算机操作系统.md",
     "知识点收录/深入剖析/HTTP解析/HTTP解析.md",
     "知识点收录/深入剖析/DispatcherServlet分发请求/DispatcherServlet分发请求.md",
     "java/JavaSE/Java.md",
-    "知识点收录/深入剖析/DispatcherServlet分发请求",
     "知识点收录/项目经验总结/项目经验总结.md",
-    "知识点收录/深入剖析/HTTP解析/assets",
     "database/数据库和存储系统.md",
     "computer/数据结构与算法.md",
     "java/SSM.md",
@@ -206,8 +220,6 @@
     "java/JavaEE/框架学习.md",
     "java/JavaEE/SSM.md",
     "java/JavaEE/springboot.md",
-    "java/JavaEE/JDBC.md",
-    "java/设计模式.md",
     "未命名.canvas"
   ]
 }

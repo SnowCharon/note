@@ -301,16 +301,17 @@ $100\%6=4$
 $1234567^{987654321}$的个位数是什么呢?
 #### 思路
 我们无需对整个数字乘方，那样就算只是3次方也很大，我们只需要关注最后一位——7的阶乘就可以
+
 | 指数 | 个位数字 |
-| ---- |:--------:|
-| 0    |    1     |
-| 1    |    7     |
-| 2    |    9     |
-| 3    |    3     |
-| 4    |    1     |
-| 5    |    7     |
-| 6    |    9     |
-| 7    |    3     |
+| ---- | ---- |
+| 0 | 1 |
+| 1 | 7 |
+| 2 | 9 |
+| 3 | 3 |
+| 4 | 1 |
+| 5 | 7 |
+| 6 | 9 |
+| 7 | 3 |
 可以看出周期为4，则只需要用987654321%4=1，则答案为7
 
 ## 奇偶问题
@@ -341,10 +342,38 @@ $1234567^{987654321}$的个位数是什么呢?
 **如果“可以一笔画成”=>“所有的顶点都是偶点，或者有2个奇点”**
 图中四个顶点都是奇点，所以不能够一笔画
 
+## 归纳问题
+求1+2+3+4……+100的和
+只需要计算1+2+3+4……+100和100+99+……+3+2+1的和即可，100 * 101 = 10100
+则原来的答案为：10100 / 2 = 5050
 
-
-
-
+## 递归问题
+**递归和归纳， 只是方向不同。"从一般性前提推出个别性结论 " 的是递归(recursive) 的思想。 而 "从个别性前提推出一般性结论" 的是归纳(inductive)的思想。**
+### 汉诺塔
+```java
+package study.january.twentytwo;  
+  
+import java.util.Scanner;  
+  
+public class HanoiTest {  
+    private  static int flag = 0;  
+    public static void main(String[] args) {  
+        Scanner scanner = new Scanner(System.in);  
+        int n = scanner.nextInt();  
+        hanoi(n,'A','B','C');  
+        System.out.printf("共计%d次\n",flag);  
+    }  
+  
+    private static void hanoi(int n, char a, char b, char c) {  
+        if (n>0){  
+            hanoi(n-1,a,c,b);  
+            System.out.printf("%c->%c\n",a,b);  
+            flag++;  
+            hanoi(n-1,c,b,a);  
+        }  
+    }  
+}
+```
 
 # 排序算法
 ![](assets/Pasted%20image%2020240121133230.png)
@@ -523,4 +552,236 @@ public class InsertSort {
     }  
 }
 ```
-## 堆排序
+
+## 希尔排序
+
+### 算法步骤
+1. 选择一个增量序列 t1，t2，……，tk，其中 ti > tj, tk = 1；
+2. 按增量序列个数 k，对序列进行 k 趟排序；
+3. 每趟排序，根据对应的增量 ti，将待排序列分割成若干长度为 m 的子序列，分别对各子表进行直接插入排序。仅增量因子为 1 时，整个序列作为一个表来处理，表长度即为整个序列的长度。
+### 动图演示
+![](assets/Sorting_shellsort_anim.gif)
+### 代码实现
+```java
+package study.january.sort;  
+  
+/**  
+ * 希尔排序  
+ *      数据量：80000  
+ *      用时：14ms  
+ */
+ public class ShellSort {  
+    public static void main(String[] args) {  
+        int[] arr = new int[80000];  
+        for (int i = 0; i < arr.length; i++) {  
+            arr[i] = (int) (Math.random() * 80000);  
+        }  
+  
+        long start = System.currentTimeMillis();  
+        shellSort(arr);  
+  
+        long end = System.currentTimeMillis();  
+  
+        System.out.println("最终结果：");  
+        for (int item : arr) {  
+            System.out.printf(item + " ");  
+        }  
+        System.out.println();  
+        System.out.println("用时：" + (end - start));  
+    }  
+  
+    private static void shellSort(int[] arr) {  
+        for (int step = arr.length / 2; step >= 1; step /= 2) {  
+            for (int i = step; i < arr.length; i++) {  
+                int temp = arr[i];  
+                int j = i - step;  
+                while (j >= 0 && arr[j] > temp) {  
+                    arr[j + step] = arr[j];  
+                    j -= step;  
+                }  
+                arr[j + step] = temp;  
+            }  
+        }  
+    }  
+}
+```
+
+
+## 归并排序
+
+> [!NOTE] 归并排序
+> 
+> However, it is not possible to do so in JavaScript, as the recursion goes too deep for the language to handle.
+> JavaScript是单线程的，并且使用调用栈（call stack）来管理函数的调用和执行。每当函数被调用时，一个新的帧（frame）被推入调用栈，而当函数执行完成时，对应的帧被弹出。然而，JavaScript引擎对调用栈的深度有一定的限制，超过这个限制就会导致栈溢出错误。
+  归并排序的递归深度取决于数组的大小，对于非常大的数组，递归深度可能会超过JavaScript调用栈的最大深度，从而导致栈溢出。
+> 
+### 算法步骤
+1. 申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；
+2. 设定两个指针，最初位置分别为两个已经排序序列的起始位置；
+3. 比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置；
+4. 重复步骤 3 直到某一指针达到序列尾；
+5. 将另一序列剩下的所有元素直接复制到合并序列尾。
+### 动图演示
+![](assets/mergeSort.gif)
+### 代码实现
+```java
+package study.january.sort;  
+  
+import java.util.Arrays;  
+  
+/**  
+ * 希尔排序  
+ *      数据量：80000  
+ *      用时：1628ms  
+ */public class MergeSort {  
+    public static void main(String[] args) {  
+        int[] arr = new int[80000];  
+        for (int i = 0; i < arr.length; i++) {  
+            arr[i] = (int) (Math.random() * 80000);  
+        }  
+  
+        long start = System.currentTimeMillis();  
+        int[] mergeSort = mergeSort(arr);  
+  
+        long end = System.currentTimeMillis();  
+  
+        System.out.println("最终结果：");  
+        for (int item : mergeSort) {  
+            System.out.printf(item + " ");  
+        }  
+        System.out.println();  
+        System.out.println("用时：" + (end - start));  
+    }  
+  
+    private static int[] mergeSort(int[] arr) {  
+        if (arr.length<2){  
+            return arr;  
+        }  
+  
+        int mid = arr.length / 2;  
+        int[] left = Arrays.copyOfRange(arr, 0, mid);  
+        int[] right = Arrays.copyOfRange(arr, mid, arr.length);  
+  
+        return merge(mergeSort(left), mergeSort(right));  
+    }  
+  
+    private static int[] merge(int[] left, int[] right) {  
+        int[] resultArray = new int[left.length + right.length];  
+  
+        int i = 0;  
+        while (left.length >0 && right.length>0){  
+            if(left[0]<=right[0]){  
+                resultArray[i++] = left[0];  
+                left = Arrays.copyOfRange(left,1,left.length);  
+            }else {  
+                resultArray[i++] = right[0];  
+                right = Arrays.copyOfRange(right,1,right.length);  
+            }  
+        }  
+  
+        while (left.length>0){  
+            resultArray[i++] = left[0];  
+            left = Arrays.copyOfRange(left,1,left.length);  
+        }  
+  
+        while (right.length > 0){  
+            resultArray[i++] = right[0];  
+            right = Arrays.copyOfRange(right,1,right.length);  
+        }  
+  
+        return resultArray;  
+    }  
+}
+```
+
+## 快速排序
+
+> [!NOTE] 快速排序和归并排序比较
+> 快速排序的最坏运行情况是 O(n²)，比如说顺序数列的快排。但它的平摊期望时间是 O(nlogn)，且 O(nlogn) 记号中隐含的常数因子很小，比复杂度稳定等于 O(nlogn) 的归并排序要小很多。所以，对绝大多数顺序性较弱的随机数列而言，快速排序总是优于归并排序。
+### 算法步骤
+
+1. 从数列中挑出一个元素，称为 "基准"（pivot）;
+2. 重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。在这个分区退出之后，该基准就处于数列的中间位置。这个称为分区（partition）操作；
+3. 递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序；
+### 动图演示
+![](assets/quickSort.gif)
+### 伪代码
+```java
+QUICKSORT(A,p,r)
+	if p < r
+		q = PARTITION(A,p,r)
+		QUICKSORT(A,p,q-1)
+		QUICKSORT(A,q+1,r)
+```
+在QUICKSORT中，A数组被划分为两个子数组，其中A[p……q-1]是小于A[q]的元素集合，A[q+1……r]是大于A[q]的元素集合，因此计算下标q是重要的一环
+```java
+PARTITION(A,p,r)
+	x = A[r]
+	i = p - 1
+	for j = p to r-1
+		if A[j]<=x
+			i = i + 1
+			exchange A[i] with A[j]
+	exchange A[i+1] with A[r]
+	return i + 1
+
+```
+### 代码实现
+```java
+package study.january.sort;  
+  
+/**  
+ * 快速排序  
+ *      数据量：80000  
+ *      用时：13ms  
+ * *      数据量：800000  
+ *      用时：63ms  
+ */
+ public class QuickSort {  
+    public static void main(String[] args) {  
+        int[] arr = new int[800000];  
+        for (int i = 0; i < arr.length; i++) {  
+            arr[i] = (int) (Math.random() * 800000);  
+        }  
+  
+        long start = System.currentTimeMillis();  
+        int[] result = quickSort(arr, 0, arr.length - 1);  
+  
+        long end = System.currentTimeMillis();  
+  
+        System.out.println("最终结果：");  
+        for (int item : result) {  
+            System.out.printf(item + " ");  
+        }  
+        System.out.println();  
+        System.out.println("用时：" + (end - start));  
+    }  
+  
+    private static int[] quickSort(int[] arr, int left, int right) {  
+        if (left < right) {  
+            int partitionIndex = partition(arr, left, right);  
+            quickSort(arr, left, partitionIndex - 1);  
+            quickSort(arr, partitionIndex + 1, right);  
+        }  
+        return arr;  
+    }  
+    private static int partition(int[] arr, int left, int right) {  
+        int pivot = arr[right];  
+        int index = left - 1;  
+        for (int i = left; i < right; i++) {  
+            if (arr[i] <= pivot) {  
+                index++;  
+                swap(arr, index, i);  
+            }  
+        }  
+        swap(arr, index + 1, right);  
+        return index + 1;  
+    }  
+  
+    private static void swap(int[] arr, int i, int index) {  
+        int temp = arr[i];  
+        arr[i] = arr[index];  
+        arr[index] = temp;  
+    }  
+}
+```
