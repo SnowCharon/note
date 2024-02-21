@@ -19,5 +19,11 @@
     "java/JavaSE/assets/",
     "java/spring6课件/images/"
   ],
-  "readableLineLength": false
+  "readableLineLength": false,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
