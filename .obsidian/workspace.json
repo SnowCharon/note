@@ -4,34 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "44715799ee513f6e",
+        "id": "d6d415773009a60d",
         "type": "tabs",
-        "dimension": 13.404825737265416,
+        "dimension": 19.43699731903485,
         "children": [
           {
-            "id": "b448afe3e718fa7c",
+            "id": "5a894a5cc6ee9207",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "知识点收录/项目经验总结/项目经验总结.md"
+                "file": "java/JVM/JVM.md"
               }
             }
           }
         ]
       },
       {
-        "id": "d6d415773009a60d",
+        "id": "9de83a373ffb2765",
         "type": "tabs",
-        "dimension": 86.59517426273459,
+        "dimension": 80.56300268096514,
         "children": [
           {
-            "id": "61b639027fe5a7ee",
+            "id": "b0adc8747323c6c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识点收录/项目经验总结/项目经验总结.md",
+                "file": "java/JVM/JVM.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5,
-    "collapsed": true
+    "width": 245.5
   },
   "right": {
     "id": "30dd81d4e13afc35",
@@ -104,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "知识点收录/项目经验总结/项目经验总结.md",
+                "file": "java/JVM/JVM.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "知识点收录/项目经验总结/项目经验总结.md",
+                "file": "java/JVM/JVM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "知识点收录/项目经验总结/项目经验总结.md"
+                "file": "java/JVM/JVM.md"
               }
             }
           },
@@ -180,8 +179,12 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "61b639027fe5a7ee",
+  "active": "b0adc8747323c6c3",
   "lastOpenFiles": [
+    "java/JVM/assets/1d63c6f91c40ceaf16b2482cb548e7c.jpg",
+    "知识点收录/项目经验总结/项目经验总结.md",
+    "java/JVM/JVM.md",
+    "java/JVM.zip",
     "computer/algorithm/practice.md",
     "computer/algorithm/algorithm.md",
     "template/algorithm-topic.md",
@@ -200,7 +203,6 @@
     "english/soundmark/assets/Recording 20240202153230.webm",
     "english/soundmark/assets/Recording 20240202153048.webm",
     "english/soundmark/assets/Recording 20240202152656.webm",
-    "english/soundmark/assets/Recording 20240202152121.webm",
     "english/tips/tip.md",
     "template/english.md",
     "english/soundmark/assets/Pasted image 20240201015636.png",
@@ -223,11 +225,8 @@
     "知识点收录/深入剖析/HTTP解析/HTTP解析.md",
     "知识点收录/深入剖析/DispatcherServlet分发请求/DispatcherServlet分发请求.md",
     "java/JavaSE/Java.md",
-    "知识点收录/项目经验总结/项目经验总结.md",
     "database/数据库和存储系统.md",
     "computer/数据结构与算法.md",
-    "java/SSM.md",
-    "java/JavaEE/设计模式.md",
     "未命名.canvas"
   ]
 }
