@@ -6429,7 +6429,7 @@ ThreadName = Thread-3 5
 
 ##### await
 
-await是Condition接口类定义的方法，在AbstractQueuedLongSynchronizer中实现
+await是 Condition 接口类定义的方法，在AbstractQueuedLongSynchronizer中实现
 
 ```java
  public final void await() throws InterruptedException {

@@ -63,3 +63,15 @@ equal opportunity 平等机会机会均等机会平等均等机会
 n. 时机，机会
 occasion,chance,opening,room
 ```
+
+**{tremendous}**
+释义：
+```txt
+adj. 巨大的，极大的；极好的，精彩的；
+```
+可以等同于 **interesting**
+
+
+
+
+

@@ -805,12 +805,169 @@ package study.january.sort;
 链表(LinkedList)可以分为单向链表（链表第一个元素的next指针指向下一个元素直到最后）、双向链表（每个元素的head指向前一个元素，next指向后一个元素，第一个元素的head和最后一个元素的next为空）、循环链表（每个元素的head指向前一个元素，next指向后一个元素，第一个元素的head指向最后一个元素，同时最后一个元素的next指向第一个元素）
 
 
+# 分治
+## binarySearch
+### 基本的BinarySearch
+给定有序数列，查找到对应的target,没有返回-1
+```java
+package practice.january.search;  
+  
+public class BinarySearch {  
+    public static void main(String[] args) {  
+        int[] nums = {1,3};  
+        int target = 2;  
+        Solution solution = new Solution();  
+        int result = solution.searchInsert(nums,target);  
+        System.out.println(result);  
+    }  
+}  
+  
+class Solution {  
+    public int searchInsert(int[] nums, int target) {  
+        int length = nums.length;  
+        int result = fun(nums,0,length-1,target);  
+        return result;  
+    }  
+  
+    public int fun(int[] arr,int left,int right,int target){  
+  
+        if(left > right){  
+            return -1;  
+        }  
+        int mid = (left + right) / 2;  
+        if(arr[mid] > target){  
+            return fun(arr,left,mid-1,target);  
+        }else if(arr[mid] < target){  
+            return fun(arr,mid+1,right,target);  
+        }else{  
+            return mid;  
+        }  
+    }  
+}
+```
+### 进阶的BinarySearch
+给定有序数列，查找到对应的target,没有返回它应该被插入的位置
+```java
+package practice.january.search;  
+  
+public class BinarySearch {  
+    public static void main(String[] args) {  
+        int[] nums = {1,3};  
+        int target = 2;  
+        Solution solution = new Solution();  
+        int result = solution.searchInsert(nums,target);  
+        System.out.println(result);  
+    }  
+}  
+  
+class Solution {  
+    public int searchInsert(int[] nums, int target) {  
+        int length = nums.length;  
+        if(target < nums[0]){  
+            return 0;  
+        }  
+        if(target > nums[length-1]){  
+            return length;  
+        }  
+        int result = fun(nums,0,length-1,target);  
+        return result;  
+    }  
+  
+    public int fun(int[] arr,int left,int right,int target){  
+  
+        if(left > right){  
+            return find(arr,target);  
+        }  
+        int mid = (left + right) / 2;  
+        if(arr[mid] > target){  
+            return fun(arr,left,mid-1,target);  
+        }else if(arr[mid] < target){  
+            return fun(arr,mid+1,right,target);  
+        }else{  
+            return mid;  
+        }  
+    }  
+  
+    public int find(int[] arr,int target){  
+        for(int i = 0; i <= arr.length - 2;i++){  
+            if(arr[i] < target && arr[i+1] > target ){  
+                return i+1;  
+            }  
+        }  
+        return -1;  
+    }  
+}
+```
 
+### BinarySearch ArrayList
+给你一个满足下述两条属性的 m x n 整数知阵:
+1. 每行中的整数从左到右按非严格递增顺序排排列
+2. 每行的第一个整数大于前一行的最后一个整数
+给你一个整数 target ，如果 target 在知阵中，返回 true ;否则，返回 false 。
+```java
+package practice.january.search;  
+  
+public class BinarySearchArray {  
+    public static void main(String[] args) {  
+        int[][] arr = {{1, 2, 8, 9}, {2, 4, 9, 12}, {4, 7, 10, 13}, {6, 8, 11, 15}};  
+        boolean find = Find(15, arr);  
+        System.out.println(find);  
+    }  
+  
+    public static boolean Find(int target, int[][] array) {  
+        if (array == null || array[0].length == 0) {  
+            return false;  
+        }  
+        int x = 0;  
+        int y = array.length - 1;  
+  
+        while (x < array[0].length && y >= 0) {  
+            if (array[y][x] > target) {  
+                y--;  
+            } else if (array[y][x] < target) {  
+                x++;  
+            } else {  
+                return true;  
+            }  
+        }  
+  
+        return false;  
+    }  
+}
+```
 
-
-
-
-
+### 查找首尾target
+给你一个按照非递减顺序排列的整数数组 nums，和一个目标值 target 。请你找出给定标值在数组中的开始位置和结束位置。
+如果数组中不存在目标值 target ，返回 [-1，-1]。
+你必须设计并实现时间复杂度为 o(log n) 的算法解决此问题
+```java
+class Solution {  
+    public int[] searchRange(int[] nums, int target) {  
+        int x = binarySearch(nums,target,true);  
+        int y = binarySearch(nums,target,false)-1;  
+        if(x<=y&&nums[x]==target&&nums[y]==target&&y<nums.length){  
+            return new int[]{x,y};  
+        }  
+  
+        return new int[]{-1,-1};  
+    }  
+    public int binarySearch(int[] arr,int target,boolean flag){  
+        int left = 0;  
+        int right = arr.length - 1;  
+        int temp = arr.length;  
+        while(left <= right){  
+            int mid = (left+right) / 2;  
+            if(arr[mid] > target || (flag && arr[mid] >= target)){  
+                right = mid - 1;  
+                temp = mid;  
+            }else{  
+                left = mid + 1;  
+            }  
+        }  
+        return temp;  
+    }  
+}
+```
 
 
 

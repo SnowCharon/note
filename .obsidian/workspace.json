@@ -4,34 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "d6d415773009a60d",
+        "id": "44715799ee513f6e",
         "type": "tabs",
-        "dimension": 19.43699731903485,
+        "dimension": 13.404825737265417,
         "children": [
           {
-            "id": "5a894a5cc6ee9207",
+            "id": "b448afe3e718fa7c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "java/JVM/JVM.md"
+                "file": "computer/algorithm/小米面经手撕总结.md"
               }
             }
           }
         ]
       },
       {
-        "id": "9de83a373ffb2765",
+        "id": "d6d415773009a60d",
         "type": "tabs",
-        "dimension": 80.56300268096514,
+        "dimension": 86.59517426273459,
         "children": [
           {
-            "id": "b0adc8747323c6c3",
+            "id": "61b639027fe5a7ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "java/JVM/JVM.md",
+                "file": "computer/algorithm/小米面经手撕总结.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "java/JVM/JVM.md",
+                "file": "computer/algorithm/小米面经手撕总结.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "java/JVM/JVM.md",
+                "file": "computer/algorithm/小米面经手撕总结.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "java/JVM/JVM.md"
+                "file": "computer/algorithm/小米面经手撕总结.md"
               }
             }
           },
@@ -179,54 +179,55 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "b0adc8747323c6c3",
+  "active": "61b639027fe5a7ee",
   "lastOpenFiles": [
-    "java/JVM/assets/1d63c6f91c40ceaf16b2482cb548e7c.jpg",
-    "知识点收录/项目经验总结/项目经验总结.md",
-    "java/JVM/JVM.md",
-    "java/JVM.zip",
     "computer/algorithm/practice.md",
     "computer/algorithm/algorithm.md",
+    "java/JVM/JVM.md",
+    "知识点收录/resume/resume.md",
+    "interview/interview.md",
+    "computer/algorithm/3],[9,20],[15,7.md",
+    "computer/algorithm/assets/Pasted image 20240316210741.png",
+    "interview/assets/Pasted image 20240316112516.png",
+    "interview/assets/Pasted image 20240316112255.png",
+    "interview/assets/Pasted image 20240316110646.png",
+    "interview/assets/Pasted image 20240316110413.png",
+    "interview/assets/Pasted image 20240316110136.png",
+    "interview/assets/Pasted image 20240316105420.png",
+    "interview/assets/Pasted image 20240316105415.png",
+    "interview/assets/Pasted image 20240316104911.png",
+    "interview/assets/Pasted image 20240316104907.png",
+    "interview/06-消息中间件篇/资料/消息中间件面试题-参考回答.md",
+    "java/JavaSE/Java.md",
+    "知识点收录/resume/未命名.canvas",
+    "interview/08-并发编程篇/讲义/多线程相关面试题.md",
+    "interview/09-JVM虚拟机篇/讲义/JVM相关面试题.md",
+    "interview/07-常见集合篇/讲义/Java集合相关面试题.md",
+    "interview/07-常见集合篇/资料/hashmap源码.md",
+    "interview/10-企业场景篇/资料/ELK搭建/ELK搭建.md",
+    "interview/06-消息中间件篇/资料/消息中间件面试题-参考回答.pdf",
+    "interview/05-微服务篇/资料/微服务面试题-参考回答.md",
+    "interview/08-并发编程篇/讲义/多线程相关面试题.pdf",
+    "知识点收录/深入剖析/DispatcherServlet分发请求/DispatcherServlet分发请求.md",
+    "interview/04-框架篇/资料/框架篇面试题-参考回答.md",
+    "interview/04-框架篇/资料/assets",
+    "english/word/word.md",
+    "知识点收录/resume",
+    "知识点收录/MIPS/MIPS.md",
+    "知识点收录/MIPS",
+    "front/Vue.md",
+    "interview/03-数据库篇/资料/MySQL面试题-参考回答.md",
+    "知识点收录/项目经验总结/项目经验总结.md",
+    "java/JVM.zip",
     "template/algorithm-topic.md",
     "template/soundmark.md",
     "template/java-coding.md",
-    "computer/algorithm/assets/1626927345-DZmfxB-PascalTriangleAnimated2.gif",
     "template/tip.md",
     "english/soundmark/soundmark.md",
-    "computer/algorithm/assets/4568998b81e9c0200d354b79a93ef2a.jpg",
     "english/soundmark/assets/Recording 20240202153855.webm",
     "english/soundmark/assets/Recording 20240202153746.webm",
     "english/soundmark/assets/Recording 20240202153609.webm",
     "english/soundmark/assets/Recording 20240202153558.webm",
-    "english/soundmark/assets/Recording 20240202153542.webm",
-    "english/soundmark/assets/Recording 20240202153341.webm",
-    "english/soundmark/assets/Recording 20240202153230.webm",
-    "english/soundmark/assets/Recording 20240202153048.webm",
-    "english/soundmark/assets/Recording 20240202152656.webm",
-    "english/tips/tip.md",
-    "template/english.md",
-    "english/soundmark/assets/Pasted image 20240201015636.png",
-    "english/soundmark/assets/Pasted image 20240201015252.png",
-    "english/soundmark/assets/Pasted image 20240201015249.png",
-    "english/grammar/grammar.md",
-    "english/word/word.md",
-    "computer/algorithm/assets/quickSort.gif",
-    "computer/algorithm/assets/Pasted image 20240122224808.png",
-    "computer/algorithm/assets/heapSort.gif",
-    "computer/algorithm/assets/Sorting_heapsort_anim.gif",
-    "computer/algorithm/assets/mergeSort.gif",
-    "computer/计算机网络.md",
-    "java/Java学习路线.md",
-    "2024-01-20.md",
-    "2024-01-21.md",
-    "english/未命名.md",
-    "2024-01-19.md",
-    "computer/计算机操作系统.md",
-    "知识点收录/深入剖析/HTTP解析/HTTP解析.md",
-    "知识点收录/深入剖析/DispatcherServlet分发请求/DispatcherServlet分发请求.md",
-    "java/JavaSE/Java.md",
-    "database/数据库和存储系统.md",
-    "computer/数据结构与算法.md",
     "未命名.canvas"
   ]
 }

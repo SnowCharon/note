@@ -132,7 +132,7 @@ class Solution {
 				dp[i] = Math.max(nums[0],nums[1]);
 			}else{
 				dp[i] = Math.max(dp[i-1],dp[i-2] + nums[i]);
-			}
+			}   
 		}
 		return dp[length-1];
     }
@@ -142,19 +142,184 @@ class Solution {
 
 
 
+# 小米
+## 反转链表
+给你单链表的头节点 `head` ，请你反转链表，并返回反转后的链表
+![](assets/Pasted%20image%2020240316210741.png)
+**输入：head = [1,2,3,4,5]
+输出：**[5,4,3,2,1]
+**示例 2：**
+
+![](https://assets.leetcode.com/uploads/2021/02/19/rev1ex2.jpg)
+
+**输入：head = [1,2]
+输出：**[2,1]
+
+**示例 3：**
+
+**输入：head = []
+输出：**[]
+```java
+package xiaomi;  
+public class A {  
+    public static void main(String[] args) {  
+        ListNode A = new ListNode(1);  
+        ListNode B = new ListNode(2);  
+        ListNode C = new ListNode(3);  
+        ListNode D = new ListNode(4);  
+        ListNode E = new ListNode(5);  
+        A.next = B;  
+        B.next = C;  
+        C.next = D;  
+        D.next = E;  
+  
+        Solution solution = new Solution();  
+        ListNode listNode = solution.reverseList(A);  
+        System.out.println(listNode);  
+  
+    }  
+}  
+  
+// Definition for singly-linked list.  
+class ListNode {  
+    int val;  
+    ListNode next;  
+  
+    ListNode() {  
+    }  
+    ListNode(int val) {  
+        this.val = val;  
+    }  
+  
+    ListNode(int val, ListNode next) {  
+        this.val = val;  
+        this.next = next;  
+    }  
+  
+    @Override  
+    public String toString() {  
+        return "ListNode{" +  
+                "val=" + val +  
+                ", next=" + next +  
+                '}';  
+    }  
+}  
+  
+class Solution {  
+    public ListNode reverseList(ListNode head) {  
+        if (head == null) {  
+            return head;  
+        }  
+        ListNode L = new ListNode();  
+        L.next = head;  
+        ListNode p = L.next;  
+        L.next = null;  
+        while (p != null) {  
+            ListNode q = p.next;  
+            p.next = L.next;  
+            L.next = p;  
+            p = q;  
+        }  
+        return L.next;  
+    }  
+}
+```
+
+## 二叉树的层序遍历
+给你二叉树的根节点 `root` ，返回其节点值的 **层序遍历** 。 （即逐层地，从左到右访问所有节点）。
+
+**示例 1：**
+
+![](https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg)
+
+```java
+输入：root = [3,9,20,null,null,15,7]
+输出：[[3],[9,20],[15,7]]
+
+示例 2：
+输入：root = [1]
+输出：[[1]]
+
+示例 3
+输入：root = []
+输出：[]
+```
+```java
+/**
+
+ * Definition for a binary tree node.
+
+ * public class TreeNode {
+
+ * int val;
+
+ * TreeNode left;
+
+ * TreeNode right;
+
+ * TreeNode() {}
+
+ * TreeNode(int val) { this.val = val; }
+
+ * TreeNode(int val, TreeNode left, TreeNode right) {
+
+ * this.val = val;
+
+ * this.left = left;
+
+ * this.right = right;
+
+ * }
+
+ * }
+
+ */
+
+class Solution {
+    public List<List<Integer>> levelOrder(TreeNode root) {
+
+        List<List<Integer>> res = new ArrayList<>();
+        fun(res, root, 0);
+        return res;
+    }
+    public void fun(List<List<Integer>> res,TreeNode node,int level) {
+        if(node==null){
+            return;
+        }
+        if(res.size() <= level){
+            List<Integer> arr = new ArrayList<>();
+             res.add(arr);
+        }
+          res.get(level).add(node.val);
+         fun(res,node.left,level+1);
+         fun(res,node.right,level+1);
+    }
+}
+```
 
 
 
 
 
 
+## 回文数
+```java
+class Solution {
+    public boolean isPalindrome(int x) {
+        String s = String.valueOf(x);
+        StringBuilder reverse = new StringBuilder(s).reverse();
+        if (s.contentEquals(reverse)) {
+            return true;
+        } else {
+
+            return false;
+        }
+    }
+}
+```
+
+## 编辑距离
+```java
 
 
-
-
-
-
-
-
-
-
+```
