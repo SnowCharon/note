@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "44715799ee513f6e",
+        "id": "d6d415773009a60d",
         "type": "tabs",
-        "dimension": 13.404825737265417,
+        "dimension": 19.43699731903485,
         "children": [
           {
-            "id": "b448afe3e718fa7c",
+            "id": "5a894a5cc6ee9207",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer/algorithm/小米面经手撕总结.md"
+                "file": "java/JVM/JVM.md"
               }
             }
           }
         ]
       },
       {
-        "id": "d6d415773009a60d",
+        "id": "9de83a373ffb2765",
         "type": "tabs",
-        "dimension": 86.59517426273459,
+        "dimension": 80.56300268096514,
         "children": [
           {
-            "id": "61b639027fe5a7ee",
+            "id": "b0adc8747323c6c3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "computer/algorithm/小米面经手撕总结.md",
-                "mode": "source",
+                "file": "java/JVM/JVM.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 245.5,
+    "collapsed": true
   },
   "right": {
     "id": "30dd81d4e13afc35",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer/algorithm/小米面经手撕总结.md",
+                "file": "java/JVM/JVM.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer/algorithm/小米面经手撕总结.md",
+                "file": "java/JVM/JVM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer/algorithm/小米面经手撕总结.md"
+                "file": "java/JVM/JVM.md"
               }
             }
           },
@@ -179,12 +180,16 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "61b639027fe5a7ee",
+  "active": "b0adc8747323c6c3",
   "lastOpenFiles": [
+    "java/JavaSE/Java.md",
+    "知识点收录/resume/resume.md",
     "computer/algorithm/practice.md",
+    "computer/algorithm/小米面试总结.md",
+    "computer/algorithm/小米面经手撕总结.md",
+    "interview/08-并发编程篇/讲义/多线程相关面试题.md",
     "computer/algorithm/algorithm.md",
     "java/JVM/JVM.md",
-    "知识点收录/resume/resume.md",
     "interview/interview.md",
     "computer/algorithm/3],[9,20],[15,7.md",
     "computer/algorithm/assets/Pasted image 20240316210741.png",
@@ -198,9 +203,7 @@
     "interview/assets/Pasted image 20240316104911.png",
     "interview/assets/Pasted image 20240316104907.png",
     "interview/06-消息中间件篇/资料/消息中间件面试题-参考回答.md",
-    "java/JavaSE/Java.md",
     "知识点收录/resume/未命名.canvas",
-    "interview/08-并发编程篇/讲义/多线程相关面试题.md",
     "interview/09-JVM虚拟机篇/讲义/JVM相关面试题.md",
     "interview/07-常见集合篇/讲义/Java集合相关面试题.md",
     "interview/07-常见集合篇/资料/hashmap源码.md",
@@ -222,8 +225,6 @@
     "template/algorithm-topic.md",
     "template/soundmark.md",
     "template/java-coding.md",
-    "template/tip.md",
-    "english/soundmark/soundmark.md",
     "english/soundmark/assets/Recording 20240202153855.webm",
     "english/soundmark/assets/Recording 20240202153746.webm",
     "english/soundmark/assets/Recording 20240202153609.webm",
