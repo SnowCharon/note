@@ -4,35 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d6d415773009a60d",
+        "id": "5022f5a28a98cec5",
         "type": "tabs",
-        "dimension": 19.43699731903485,
         "children": [
           {
-            "id": "5a894a5cc6ee9207",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "java/JVM/JVM.md"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "9de83a373ffb2765",
-        "type": "tabs",
-        "dimension": 80.56300268096514,
-        "children": [
-          {
-            "id": "b0adc8747323c6c3",
+            "id": "97c783bad9d565fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "java/JVM/JVM.md",
-                "mode": "preview",
+                "file": "知识点收录/项目总结/微服务/微服务.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -87,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5,
-    "collapsed": true
+    "width": 245.5
   },
   "right": {
     "id": "30dd81d4e13afc35",
@@ -104,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "java/JVM/JVM.md",
+                "file": "知识点收录/项目总结/微服务/微服务.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "java/JVM/JVM.md",
+                "file": "知识点收录/项目总结/微服务/微服务.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "java/JVM/JVM.md"
+                "file": "知识点收录/项目总结/微服务/微服务.md"
               }
             }
           },
@@ -180,16 +161,17 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "b0adc8747323c6c3",
+  "active": "97c783bad9d565fc",
   "lastOpenFiles": [
-    "java/JavaSE/Java.md",
     "知识点收录/resume/resume.md",
+    "知识点收录/resume/未命名.canvas",
+    "java/JVM/JVM.md",
+    "java/JavaSE/Java.md",
     "computer/algorithm/practice.md",
     "computer/algorithm/小米面试总结.md",
     "computer/algorithm/小米面经手撕总结.md",
     "interview/08-并发编程篇/讲义/多线程相关面试题.md",
     "computer/algorithm/algorithm.md",
-    "java/JVM/JVM.md",
     "interview/interview.md",
     "computer/algorithm/3],[9,20],[15,7.md",
     "computer/algorithm/assets/Pasted image 20240316210741.png",
@@ -203,7 +185,6 @@
     "interview/assets/Pasted image 20240316104911.png",
     "interview/assets/Pasted image 20240316104907.png",
     "interview/06-消息中间件篇/资料/消息中间件面试题-参考回答.md",
-    "知识点收录/resume/未命名.canvas",
     "interview/09-JVM虚拟机篇/讲义/JVM相关面试题.md",
     "interview/07-常见集合篇/讲义/Java集合相关面试题.md",
     "interview/07-常见集合篇/资料/hashmap源码.md",
@@ -224,7 +205,6 @@
     "java/JVM.zip",
     "template/algorithm-topic.md",
     "template/soundmark.md",
-    "template/java-coding.md",
     "english/soundmark/assets/Recording 20240202153855.webm",
     "english/soundmark/assets/Recording 20240202153746.webm",
     "english/soundmark/assets/Recording 20240202153609.webm",
