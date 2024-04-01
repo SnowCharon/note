@@ -4,16 +4,34 @@
     "type": "split",
     "children": [
       {
-        "id": "5022f5a28a98cec5",
+        "id": "44715799ee513f6e",
         "type": "tabs",
+        "dimension": 13.404825737265417,
         "children": [
           {
-            "id": "97c783bad9d565fc",
+            "id": "b448afe3e718fa7c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "computer/algorithm/practice.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d6d415773009a60d",
+        "type": "tabs",
+        "dimension": 86.59517426273459,
+        "children": [
+          {
+            "id": "61b639027fe5a7ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "知识点收录/项目总结/微服务/微服务.md",
+                "file": "computer/algorithm/practice.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 245.5,
+    "collapsed": true
   },
   "right": {
     "id": "30dd81d4e13afc35",
@@ -85,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "知识点收录/项目总结/微服务/微服务.md",
+                "file": "computer/algorithm/practice.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "知识点收录/项目总结/微服务/微服务.md",
+                "file": "computer/algorithm/practice.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "知识点收录/项目总结/微服务/微服务.md"
+                "file": "computer/algorithm/practice.md"
               }
             }
           },
@@ -161,18 +180,27 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "97c783bad9d565fc",
+  "active": "61b639027fe5a7ee",
   "lastOpenFiles": [
+    "template/algorithm-topic.md",
+    "computer/algorithm/practice.md",
+    "computer/algorithm/assets/Pasted image 20240330165545.png",
+    "computer/algorithm/algorithm.md",
     "知识点收录/resume/resume.md",
+    "computer/algorithm/assets/Pasted image 20240329203925.png",
+    "interview/interview.md",
+    "english/word/word.md",
+    "template/english_simple.md",
+    "template/english.md",
+    "computer/algorithm/小米面试总结.md",
+    "computer/计算机网络.md",
+    "知识点收录/项目总结/微服务/微服务.md",
+    "未命名",
     "知识点收录/resume/未命名.canvas",
     "java/JVM/JVM.md",
     "java/JavaSE/Java.md",
-    "computer/algorithm/practice.md",
-    "computer/algorithm/小米面试总结.md",
     "computer/algorithm/小米面经手撕总结.md",
     "interview/08-并发编程篇/讲义/多线程相关面试题.md",
-    "computer/algorithm/algorithm.md",
-    "interview/interview.md",
     "computer/algorithm/3],[9,20],[15,7.md",
     "computer/algorithm/assets/Pasted image 20240316210741.png",
     "interview/assets/Pasted image 20240316112516.png",
@@ -182,8 +210,6 @@
     "interview/assets/Pasted image 20240316110136.png",
     "interview/assets/Pasted image 20240316105420.png",
     "interview/assets/Pasted image 20240316105415.png",
-    "interview/assets/Pasted image 20240316104911.png",
-    "interview/assets/Pasted image 20240316104907.png",
     "interview/06-消息中间件篇/资料/消息中间件面试题-参考回答.md",
     "interview/09-JVM虚拟机篇/讲义/JVM相关面试题.md",
     "interview/07-常见集合篇/讲义/Java集合相关面试题.md",
@@ -195,20 +221,14 @@
     "知识点收录/深入剖析/DispatcherServlet分发请求/DispatcherServlet分发请求.md",
     "interview/04-框架篇/资料/框架篇面试题-参考回答.md",
     "interview/04-框架篇/资料/assets",
-    "english/word/word.md",
     "知识点收录/resume",
     "知识点收录/MIPS/MIPS.md",
     "知识点收录/MIPS",
     "front/Vue.md",
-    "interview/03-数据库篇/资料/MySQL面试题-参考回答.md",
-    "知识点收录/项目经验总结/项目经验总结.md",
     "java/JVM.zip",
-    "template/algorithm-topic.md",
-    "template/soundmark.md",
     "english/soundmark/assets/Recording 20240202153855.webm",
     "english/soundmark/assets/Recording 20240202153746.webm",
     "english/soundmark/assets/Recording 20240202153609.webm",
-    "english/soundmark/assets/Recording 20240202153558.webm",
     "未命名.canvas"
   ]
 }

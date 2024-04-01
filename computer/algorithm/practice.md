@@ -2,7 +2,7 @@
 ### 爬楼梯
 #### topic
 ```
-假设你正在爬楼梯。需要 阶你才能到达楼顶
+假设你正在爬楼梯。需要 n阶你才能到达楼顶
 每次你可以爬 1 或 2个台阶。你有多少种不同的方法可以爬到楼顶呢?
 ```
 
@@ -28,6 +28,7 @@
 > [!NOTE] tip
 > 1 <= n <= 45
 
+
 #### code
 ```java
 class Solution {
@@ -41,6 +42,7 @@ class Solution {
 		}
 		
 		return arr[n];
+		
 	}
 }
 ```
@@ -138,8 +140,6 @@ class Solution {
     }
 }
 ```
-
-
 
 
 # 小米
@@ -311,7 +311,6 @@ class Solution {
         if (s.contentEquals(reverse)) {
             return true;
         } else {
-
             return false;
         }
     }
@@ -543,7 +542,7 @@ class Solution {
         else if (l2 == null) {
             return l1;
         }
-        else if (l1.val < l2.val) {q
+        else if (l1.val < l2.val) {
             l1.next = mergeTwoLists(l1.next, l2);
             return l1;
         }
@@ -1255,4 +1254,448 @@ class Solution {
     }
 }
 ```
+
+# Tencent
+## 笔试真题
+### 好点
+#### topic
+```
+小红拿到了一个无向图，其中一些边被染成了红色。小红定义一个点是“好点”，当且仅当这个点的所有邻边都是红边。
+现在请你求出这个无向图“好点”的数量。
+注:如果一个节点没有任何邻边，那么它也是好点。
+```
+#### input description
+```
+第一行输入两个正整数n，m，代表节点的数量和边的数量。接下来的m行，每行输入两个正整数u、v，和一个字符chr，代表节点u和节点v有一条边连接。如果 chr 为'R'，代表这条边被染红;"W"代表未被染色。
+
+```
+#### sample
+输入：
+```
+4 4
+1 2 R
+2 3 W
+3 4 W
+1 4 R
+```
+输出：
+```
+1
+```
+解释：
+```
+只有1号节点是好点。
+```
+
+> [!NOTE] tip
+> 1 <= nums.length <= 100
+> 0 <= nums[i] <= 400
+#### code
+```java
+public class A {  
+    public static void main(String[] args) {  
+        Scanner sc = new Scanner(System.in);  
+        int n = sc.nextInt();  
+        int m = sc.nextInt();  
+  
+        Node[] nodes = new Node[n + 1];  
+        for (int i = 1; i <= n; i++) {  
+            nodes[i] = new Node();  
+        }  
+        for (int i = 0; i < m; i++) {  
+            int u = sc.nextInt();  
+            int v = sc.nextInt();  
+            char ch = sc.next().charAt(0);  
+            nodes[u].addEdge(ch == 'R');  
+            nodes[v].addEdge(ch == 'R');  
+        }  
+  
+        int goodNode = 0;  
+        for (int i = 1; i <= n; i++) {  
+            if (nodes[i].isGood()) {  
+                goodNode++;  
+            }  
+        }  
+        System.out.println(goodNode);  
+    }  
+  
+    static class Node {  
+        List<Boolean> edges = new ArrayList<>();  
+  
+        void addEdge(boolean isRed) {  
+            edges.add(isRed);  
+        }  
+  
+        boolean isGood() {  
+            for (Boolean isRed : edges) {  
+                if (!isRed) {  
+                    return false;  
+                }  
+            }  
+            return true;  
+        }  
+    }  
+}
+```
+
+### 名称
+#### topic
+```
+小红拿到了一个链表。她准备将这个链表断裂成两个链表，再拼接到一起，使得链表从头节点到尾部升序。你能帮小红判断能否达成目的吗?
+给定的为一个链表数组，你需要对于数组中每个链表进行一次“是”或者“否”的答案回答，并返回布尔数组。
+```
+#### input description
+```
+每个链表的长度不小于 2，且每个链表中不包含两个相等的元素。所有链表的长度之和保证不超过10^5
+```
+#### sample
+输入：
+```
+[{1,2,3},{2 3, 1},{3 2, 1}]
+```
+输出：
+```
+[true,true,false]
+```
+解释：
+```
+第三个链表无论怎么操作都不满足条件。
+```
+#### code
+```java
+
+```
+
+### 名称
+#### topic
+```
+小红拿到了一个有n个节点的无向图，这个图初始并不是连通
+现在小红想知道，添加恰好一条边使得这个图连通，有多少种不同的加边方案?
+```
+#### input description
+```
+第一行输入两个正整数n、m，用空格隔开
+接下来的m行，每行输入两个正整数u,v，代表节点u和节点v之间有一条边迢接
+```
+#### sample
+输入：
+```
+4 2
+1 2
+3 4
+```
+输出：
+```
+4
+```
+解释：
+```
+添加边 (1,3)或者(1,4)或者 (2,3)或者 (2,4)都是可以以的。
+```
+
+> [!NOTE] tip
+> 1 ≤ n,m ≤ 10^5
+1 ≤ u,v ≤ n
+保证给出的图是不连通的。
+#### code
+```java
+
+```
+
+
+
+
+
+
+## Practice
+### LRUCache
+请你设计并实现一个满足  [LRU (最近最少使用) 缓存](https://baike.baidu.com/item/LRU) 约束的数据结构。
+实现 `LRUCache` 类：
+- `LRUCache(int capacity)` 以 **正整数** 作为容量 `capacity` 初始化 LRU 缓存
+- `int get(int key)` 如果关键字 `key` 存在于缓存中，则返回关键字的值，否则返回 `-1` 。
+- `void put(int key, int value)` 如果关键字 `key` 已经存在，则变更其数据值 `value` ；如果不存在，则向缓存中插入该组 `key-value` 。如果插入操作导致关键字数量超过 `capacity` ，则应该 **逐出** 最久未使用的关键字。
+函数 `get` 和 `put` 必须以 `O(1)` 的平均时间复杂度运行。
+![0.2|475](assets/Pasted%20image%2020240329203925.png)
+```java
+class LRUCache {  
+    class DLinkedNode {  
+        int key;  
+        int value;  
+        DLinkedNode pre;  
+        DLinkedNode next;  
+  
+        public DLinkedNode() {  
+        }  
+        public DLinkedNode(int key, int value) {  
+            this.key = key;  
+            this.value = value;  
+        }  
+    }  
+    private Map<Integer, DLinkedNode> map = new HashMap<>();  
+    int size;  
+    int capacity;  
+    DLinkedNode head, tail;  
+  
+    public LRUCache(int capacity) {  
+        this.capacity = capacity;  
+        this.size = 0;  
+        head = new DLinkedNode();  
+        tail = new DLinkedNode();  
+        head.next = tail;  
+        tail.pre = head;  
+    }  
+  
+    public int get(int key) {  
+        DLinkedNode node = map.get(key);  
+        if (node == null) {  
+            return -1;  
+        } else {  
+            moveToHead(node);  
+            return node.value;  
+        }  
+    }  
+  
+    public void put(int key, int value) {  
+        DLinkedNode node = map.get(key);  
+        if (node != null) {  
+            node.value = value;  
+            moveToHead(node);  
+        } else {  
+            DLinkedNode newNode = new DLinkedNode(key, value);  
+            addToHead(newNode);  
+            map.put(key, newNode);  
+            ++size;  
+            if (size > capacity) {  
+                DLinkedNode removeNode = removeTail();  
+                map.remove(removeNode.key);  
+                --size;  
+            }  
+        }  
+    }  
+  
+  
+    private void moveToHead(DLinkedNode node) {  
+        removeNode(node);  
+        addToHead(node);  
+    }  
+  
+    private void addToHead(DLinkedNode node) {  
+        node.next = head.next;  
+        head.next = node;  
+        node.next.pre = node;  
+        node.pre = head;  
+    }  
+  
+    private void removeNode(DLinkedNode node) {  
+        node.pre.next = node.next;  
+        node.next.pre = node.pre;  
+    }  
+  
+  
+    private DLinkedNode removeTail() {  
+        DLinkedNode node = tail.pre;  
+        removeNode(node);  
+        return node;  
+    }  
+}
+```
+### 手撕快排
+```java
+class Solution {  
+    public int[] sortArray(int[] nums) {  
+        quickSort(nums, 0, nums.length - 1);  
+        return nums;  
+    }  
+  
+    private void quickSort(int[] nums, int left, int right) {  
+        if (left < right) {  
+            int partitionIndex = partition(nums, left, right);  
+            quickSort(nums, left, partitionIndex - 1);  
+            quickSort(nums, partitionIndex + 1, right);  
+        }  
+    }  
+  
+    private int partition(int[] nums, int left, int right) {  
+        int pivot = nums[right];  
+        int index = left - 1;  
+        for (int i = left; i < right; i++) {  
+            if (nums[i] <= pivot) {  
+                index = index + 1;  
+                swap(nums, i, index);  
+            }  
+        }  
+        swap(nums, right, index + 1);  
+        return index + 1;  
+    }  
+  
+  
+    private void swap(int[] arr, int i, int index) {  
+        int temp = arr[i];  
+        arr[i] = arr[index];  
+        arr[index] = temp;  
+    }  
+}
+```
+### 字符串转换整数
+```java
+public int myAtoi(String s) {  
+    final int HEIGHT_INT = 2147483647;  
+    final int LOW_INT = -2147483648;  
+    String trim = s.trim();  
+    if (trim.isEmpty()) {  
+        return 0;  
+    }  
+  
+    int flag = 0;  
+    int index = 0;  
+    boolean ct = true;  
+    StringBuilder temp = new StringBuilder();  
+    long sum;  
+    if (trim.length() == 1 && trim.charAt(index) == '-' || trim.length() == 1 && trim.charAt(index) == '+') {  
+        return 0;  
+    } else if (trim.charAt(index) == '-') {  
+        flag = -1;  
+        index = index + 1;  
+    } else if (trim.charAt(index) == '+') {  
+        flag = 1;  
+        index = index + 1;  
+    }  
+  
+    if (index < trim.length() && trim.charAt(index) < '0' || trim.charAt(index) > '9') {  
+        return 0;  
+    }  
+    while (index < trim.length() && trim.charAt(index) >= '0' && trim.charAt(index) <= '9') {  
+        if (trim.charAt(index) == '0' && ct) {  
+            index++;  
+        } else {  
+            temp.append(trim.charAt(index++));  
+            ct = false;  
+        }  
+    }  
+    if (temp.length() == 0) {  
+        return 0;  
+    } else if (temp.length() > 10 && flag != -1) {  
+        return HEIGHT_INT;  
+    } else if (temp.length() > 10) {  
+        return LOW_INT;  
+    } else {  
+        sum = Long.parseLong(String.valueOf(temp));  
+    }  
+  
+    if (flag == -1) {  
+        sum = -sum;  
+  
+    }  
+    if (sum < LOW_INT) {  
+        return LOW_INT;  
+    } else if (sum > HEIGHT_INT) {  
+        return HEIGHT_INT;  
+    } else {  
+        return (int) sum;  
+    }  
+}
+```
+
+### 用 Rand7() 实现 Rand10()
+给定方法 `rand7` 可生成 `[1,7]` 范围内的均匀随机整数，试写一个方法 `rand10` 生成 `[1,10]` 范围内的均匀随机整数。
+
+你只能调用 `rand7()` 且不能调用其他方法。请不要使用系统的 `Math.random()` 方法。
+
+每个测试用例将有一个内部参数 `n`，即你实现的函数 `rand10()` 在测试时将被调用的次数。请注意，这不是传递给 `rand10()` 的参数。
+![|180](assets/Pasted%20image%2020240330165545.png)
+```java
+/**
+ * The rand7() API is already defined in the parent class SolBase.
+ * public int rand7();
+ *
+ * @return a random integer in the range 1 to 7
+ */
+class Solution extends SolBase {
+    public int rand10() {
+        int row, col, index;
+        do {
+            row = rand7();
+            col = rand7();
+            index = col + (row - 1) * 7;
+        } while (index > 40);
+        return 1 + (index - 1) % 10;
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
