@@ -87,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5,
-    "collapsed": true
+    "width": 245.5
   },
   "right": {
     "id": "30dd81d4e13afc35",
@@ -180,8 +179,12 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "61b639027fe5a7ee",
+  "active": "7e78882e8d757bd8",
   "lastOpenFiles": [
+    "interview/advance/图解系统.pdf",
+    "interview/advance/图解redis.pdf",
+    "interview/advance/图解网络.pdf",
+    "interview/advance",
     "template/algorithm-topic.md",
     "computer/algorithm/practice.md",
     "computer/algorithm/assets/Pasted image 20240330165545.png",
@@ -224,11 +227,7 @@
     "知识点收录/resume",
     "知识点收录/MIPS/MIPS.md",
     "知识点收录/MIPS",
-    "front/Vue.md",
     "java/JVM.zip",
-    "english/soundmark/assets/Recording 20240202153855.webm",
-    "english/soundmark/assets/Recording 20240202153746.webm",
-    "english/soundmark/assets/Recording 20240202153609.webm",
     "未命名.canvas"
   ]
 }
