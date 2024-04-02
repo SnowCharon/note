@@ -1338,7 +1338,7 @@ public class A {
 }
 ```
 
-### 名称
+### 链表重排升序
 #### topic
 ```
 小红拿到了一个链表。她准备将这个链表断裂成两个链表，再拼接到一起，使得链表从头节点到尾部升序。你能帮小红判断能否达成目的吗?
@@ -1363,10 +1363,69 @@ public class A {
 ```
 #### code
 ```java
-
+public class B {  
+    public static void main(String[] args) {  
+        ListNode[] list = new ListNode[3];  
+  
+        ListNode node1 = new ListNode(1);  
+        node1.next = new ListNode(2);  
+        node1.next.next = new ListNode(3);  
+  
+        ListNode node2 = new ListNode(2);  
+        node2.next = new ListNode(3);  
+        node2.next.next = new ListNode(1);  
+  
+        ListNode node3 = new ListNode(1);  
+        node3.next = new ListNode(4);  
+        node3.next.next = new ListNode(0);  
+        node3.next.next.next = new ListNode(3);  
+  
+        list[0] = node1;  
+        list[1] = node2;  
+        list[2] = node3;  
+  
+        boolean[] booleans = canSorted(list);  
+        for (boolean aBoolean : booleans) {  
+            System.out.println(aBoolean);  
+        }  
+    }  
+  
+    /**  
+     * 除了保证两段都递增，还要保证第一段的头大于第二段的尾:如 1 4 0 3,就不满足条件  
+     */  
+    public static boolean[] canSorted(ListNode[] lists) {  
+        // write code here  
+        boolean[] booleans = new boolean[lists.length];  
+        Arrays.fill(booleans,false);  
+        for (int i = 0; i < lists.length; i++) {  
+            int count = 0;  
+            ListNode head = lists[i];  
+            ListNode node = lists[i];  
+            while (node!=null && node.next !=null){  
+                if(node.val > node.next.val){  
+                    count++;  
+                }  
+                node = node.next;  
+            }  
+            if(count == 1 && head.val > node.val || count ==0) {  
+                booleans[i] = true;  
+            }  
+        }  
+        return booleans;  
+    }  
+  
+    static class ListNode {  
+        int val;  
+        ListNode next = null;  
+  
+        public ListNode(int val) {  
+            this.val = val;  
+        }  
+    }  
+}
 ```
 
-### 名称
+### 构建无向连通图
 #### topic
 ```
 小红拿到了一个有n个节点的无向图，这个图初始并不是连通
@@ -1376,6 +1435,9 @@ public class A {
 ```
 第一行输入两个正整数n、m，用空格隔开
 接下来的m行，每行输入两个正整数u,v，代表节点u和节点v之间有一条边迢接
+1 ≤ n,m ≤ 10^5
+1 ≤ u,v ≤ n
+保证给出的图是不连通的。
 ```
 #### sample
 输入：
@@ -1392,17 +1454,225 @@ public class A {
 ```
 添加边 (1,3)或者(1,4)或者 (2,3)或者 (2,4)都是可以以的。
 ```
-
-> [!NOTE] tip
-> 1 ≤ n,m ≤ 10^5
-1 ≤ u,v ≤ n
-保证给出的图是不连通的。
 #### code
 ```java
-
+public class C {  
+    public static void main(String[] args) {  
+        Scanner sc = new Scanner(System.in);  
+        int n = sc.nextInt();  
+        int m = sc.nextInt();  
+  
+        List<List<Integer>> graph = new ArrayList<>();  
+        for (int i = 0; i <= n; i++) {  
+            graph.add(new ArrayList<>());  
+        }  
+  
+        for (int i = 0; i < m; i++) {  
+            int u = sc.nextInt();  
+            int v = sc.nextInt();  
+            graph.get(u).add(v);  
+            graph.get(v).add(u);  
+        }  
+  
+        long res = countAddEdge(n, m, graph);  
+        System.out.println(res);  
+        sc.close();  
+    }  
+  
+    private static long countAddEdge(int n, int m, List<List<Integer>> graph) {  
+        boolean[] visited = new boolean[n + 1];  
+        ArrayList<Integer> sizes = new ArrayList<>();  
+        for (int i = 1; i <= n; i++) {  
+            if (!visited[i]) {  
+                int size = dfs(i, graph, visited);  
+                if (size > 0) {  
+                    sizes.add(size);  
+                }  
+            }  
+        }  
+  
+        if(sizes.size() != 2){  
+            return 0;  
+        }else {  
+            long size1 = sizes.get(0);  
+            long size2 = sizes.get(1);  
+            return size1 * size2;  
+        }  
+    }  
+  
+    private static int dfs(int node, List<List<Integer>> graph, boolean[] visited) {  
+        if (visited[node]) {  
+            return 0;  
+        }  
+        visited[node] = true;  
+        int size = 1;  
+        for (Integer neighbour : graph.get(node)) {  
+            size += dfs(neighbour, graph, visited);  
+        }  
+        return size;  
+    }  
+}
 ```
 
+### 异或和最大
+#### topic
+```
+小红拿到了一个数组，她准备将数组分割成k段，使得每段内部做按位异或后，再全部求和。小红希望最终这个和尽可能大，你能帮帮她吗?
+```
+#### input description
+```
+输入包含两行。
+第一行两个正整数 n, k,(1 ≤k≤n≤ 400)，分别表示数组的长度和要分的段数。
+第二行π 个整数 a¡(0 ≤ ai ≤ 10^9)，表示数组 a 的元素。
+```
+#### sample
+输入：
+```
+6 2
+1 1 1 2 3 4
+```
+输出：
+```
+10
+```
+解释：
+```
+小红将数组分为了[1,4]和[5,6]这两个区间，
+得分分别为:1 xor 1 xor 1 xor 2 = 3 和3 xor 4 = 7.
+总得分为3十7=10.
+可以证明不存在比 10 更优的分割方案。
+注: xor 符号表示异或操作。
+```
+#### code——**该code仅有19%通过率**
+```java
+public class D {  
+    public static void main(String[] args) {  
+        Scanner sc = new Scanner(System.in);  
+        int n = sc.nextInt();  
+        int k = sc.nextInt();  
+        int[] arr = new int[n+1];  
+        for (int i = 1; i <= n; i++) {  
+            arr[i] = sc.nextInt();  
+        }  
+        sc.close();  
+        int res = maxValue(n, k, arr);  
+        System.out.println(res);  
+    }  
+  
+    private static int maxValue(int n, int k, int[] arr) {  
+        int[][] dp = new int[n + 1][k + 1];  
+        for (int i = 1; i <= n; i++) {  
+            for (int j = 1; j <= Math.min(i, k); j++) {  
+                int to_xor = 0;  
+                for (int p = i; p >= 1; p--) {  
+                    to_xor ^= arr[p];  
+                    if (j == 1) {  
+                        dp[i][j] = to_xor;  
+                    } else {  
+                        dp[i][j] = Math.max(dp[i][j], dp[p - 1][j - 1] + to_xor);  
+                    }  
+                }  
+            }  
+        }  
+  
+        return dp[n][k];  
+    }  
+}
+```
 
+### tencent字符串
+#### topic
+```
+小红拿到了一个字符矩阵，她可以从任意一个地方出发，希望走6 步后恰好形成"tencent"字符串。小红想知道，共有多少种不同的行走方案?
+注:每一步可以选择上、下、左、右中任意一个方向进行行走。
+不可行走到矩阵外部。
+```
+#### input description
+```
+第一行输入两个正整数n,m，代表短阵的行数和列数。
+接下来的几行，每行输入一个长度为m的、仅由小写字母组成的字符串，代表小红拿到的知阵。
+1 ≤n,m ≤ 1000
+```
+#### sample
+输入：
+```
+3 3
+ten
+nec
+ten
+```
+输出：
+```
+4
+```
+解释：
+```
+第一个方案，从左上角出发，右右下左左上。
+第二个方案，从左上角出发，右右下左左下
+第三个方案，从左下角出发，右右上左左下。
+第四个方案，从左上角出发，右右上左左上。
+```
+#### code
+```java
+public class E {  
+    private static final int[] dx = {-1, 0, 1, 0};  
+    private static final int[] dy = {0, 1, 0, -1};  
+    private static int count = 0;  
+    private static String word = "tencent";  
+    private static char[][] matrix;  
+    private static boolean[][][] visited;  
+  
+  
+    public static void main(String[] args) {  
+        Scanner sc = new Scanner(System.in);  
+        int n = sc.nextInt();  
+        int m = sc.nextInt();  
+        char[][] chars = new char[n][m];  
+        for (int i = 0; i < n; i++) {  
+            String line = sc.next();  
+            for (int j = 0; j < m; j++) {  
+                chars[i][j] = line.charAt(j);  
+            }  
+        }  
+        int number = numberOfPath(chars);  
+        System.out.println(number);  
+    }  
+  
+    private static int numberOfPath(char[][] chars) {  
+        matrix = chars;  
+        int n = matrix.length;  
+        int m = matrix[0].length;  
+        visited = new boolean[n][m][word.length()];  
+  
+        for (int i = 0; i < n; i++) {  
+            for (int j = 0; j < m; j++) {  
+                if (matrix[i][j] == word.charAt(0)) {  
+                    dfs(i, j, 0);  
+                }  
+            }  
+        }  
+        return count;  
+    }  
+  
+    private static void dfs(int i, int j, int index) {  
+        if (index == word.length() - 1) {  
+            count++;  
+            return;  
+        }  
+        visited[i][j][index] = true;  
+        for (int k = 0; k < 4; k++) {  
+            int nx = i + dx[k];  
+            int ny = j + dy[k];  
+  
+            if (nx >= 0 && ny >= 0 && nx < matrix.length && ny < matrix[0].length  
+                    && !visited[nx][ny][index + 1] && matrix[nx][ny] == word.charAt(index + 1)) {  
+                dfs(nx, ny, index + 1);  
+            }  
+        }  
+        visited[i][j][index] = false;  
+    }  
+}
+```
 
 
 

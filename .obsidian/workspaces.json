@@ -1,549 +1,5 @@
 {
   "workspaces": {
-    "soundmark": {
-      "main": {
-        "id": "5375a37e10c88ed1",
-        "type": "split",
-        "children": [
-          {
-            "id": "9dff784e1d2fb0ec",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "7e78882e8d757bd8",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "english/soundmark/soundmark.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "c327adb1f0d04063",
-        "type": "split",
-        "children": [
-          {
-            "id": "a94853100bb8b45c",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "65433080092ade52",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "23d89cd93e63d3dc",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {}
-                }
-              },
-              {
-                "id": "c8390bbd0fcdf03b",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "english/soundmark/soundmark.md"
-                  }
-                }
-              },
-              {
-                "id": "80154f3ee8e4cae9",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              }
-            ],
-            "currentTab": 2
-          }
-        ],
-        "direction": "horizontal",
-        "width": 245.5
-      },
-      "right": {
-        "id": "30dd81d4e13afc35",
-        "type": "split",
-        "children": [
-          {
-            "id": "9069e576f164acdc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ae9eb070472fa448",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "english/soundmark/soundmark.md",
-                    "collapseAll": true,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "0e20ef2c63585bbc",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "english/soundmark/soundmark.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "9ae47add6077116d",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "useHierarchy": true
-                  }
-                }
-              },
-              {
-                "id": "a4727b220c48a4e2",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "english/soundmark/soundmark.md"
-                  }
-                }
-              },
-              {
-                "id": "268ee39bb7667d37",
-                "type": "leaf",
-                "state": {
-                  "type": "calendar",
-                  "state": {}
-                }
-              }
-            ],
-            "currentTab": 4
-          }
-        ],
-        "direction": "horizontal",
-        "width": 390.5,
-        "collapsed": true
-      },
-      "left-ribbon": {
-        "hiddenItems": {
-          "switcher:打开快速切换": false,
-          "graph:查看关系图谱": false,
-          "canvas:新建白板": false,
-          "daily-notes:打开/创建今天的日记": false,
-          "templates:插入模板": false,
-          "command-palette:打开命令面板": false,
-          "markdown-importer:打开 Markdown 格式转换器": false,
-          "table-editor-obsidian:Advanced Tables Toolbar": false,
-          "templater-obsidian:Templater": false,
-          "omnisearch:Omnisearch": false,
-          "workspaces:管理工作区布局": false,
-          "audio-recorder:开始/结束录音": false
-        }
-      },
-      "active": "7e78882e8d757bd8"
-    },
-    "algorithm": {
-      "main": {
-        "id": "5375a37e10c88ed1",
-        "type": "split",
-        "children": [
-          {
-            "id": "44715799ee513f6e",
-            "type": "tabs",
-            "dimension": 13.404825737265417,
-            "children": [
-              {
-                "id": "b448afe3e718fa7c",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "computer/algorithm/algorithm.md"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "id": "d6d415773009a60d",
-            "type": "tabs",
-            "dimension": 86.59517426273459,
-            "children": [
-              {
-                "id": "61b639027fe5a7ee",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "computer/algorithm/algorithm.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "c327adb1f0d04063",
-        "type": "split",
-        "children": [
-          {
-            "id": "a94853100bb8b45c",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "7e78882e8d757bd8",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "65433080092ade52",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "23d89cd93e63d3dc",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {}
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 245.5,
-        "collapsed": true
-      },
-      "right": {
-        "id": "30dd81d4e13afc35",
-        "type": "split",
-        "children": [
-          {
-            "id": "9069e576f164acdc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ae9eb070472fa448",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "computer/algorithm/algorithm.md",
-                    "collapseAll": true,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "0e20ef2c63585bbc",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "computer/algorithm/algorithm.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "9ae47add6077116d",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "useHierarchy": true
-                  }
-                }
-              },
-              {
-                "id": "a4727b220c48a4e2",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "computer/algorithm/algorithm.md"
-                  }
-                }
-              },
-              {
-                "id": "268ee39bb7667d37",
-                "type": "leaf",
-                "state": {
-                  "type": "calendar",
-                  "state": {}
-                }
-              }
-            ],
-            "currentTab": 4
-          }
-        ],
-        "direction": "horizontal",
-        "width": 390.5,
-        "collapsed": true
-      },
-      "left-ribbon": {
-        "hiddenItems": {
-          "audio-recorder:开始/结束录音": false,
-          "switcher:打开快速切换": false,
-          "graph:查看关系图谱": false,
-          "canvas:新建白板": false,
-          "daily-notes:打开/创建今天的日记": false,
-          "templates:插入模板": false,
-          "command-palette:打开命令面板": false,
-          "markdown-importer:打开 Markdown 格式转换器": false,
-          "table-editor-obsidian:Advanced Tables Toolbar": false,
-          "templater-obsidian:Templater": false,
-          "omnisearch:Omnisearch": false,
-          "workspaces:管理工作区布局": false
-        }
-      },
-      "active": "61b639027fe5a7ee"
-    },
-    "知识点收录": {
-      "main": {
-        "id": "5375a37e10c88ed1",
-        "type": "split",
-        "children": [
-          {
-            "id": "44715799ee513f6e",
-            "type": "tabs",
-            "dimension": 13.404825737265416,
-            "children": [
-              {
-                "id": "b448afe3e718fa7c",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "知识点收录/项目经验总结/项目经验总结.md"
-                  }
-                }
-              }
-            ]
-          },
-          {
-            "id": "d6d415773009a60d",
-            "type": "tabs",
-            "dimension": 86.59517426273459,
-            "children": [
-              {
-                "id": "61b639027fe5a7ee",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "知识点收录/项目经验总结/项目经验总结.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical"
-      },
-      "left": {
-        "id": "c327adb1f0d04063",
-        "type": "split",
-        "children": [
-          {
-            "id": "a94853100bb8b45c",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "7e78882e8d757bd8",
-                "type": "leaf",
-                "state": {
-                  "type": "file-explorer",
-                  "state": {
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "65433080092ade52",
-                "type": "leaf",
-                "state": {
-                  "type": "search",
-                  "state": {
-                    "query": "",
-                    "matchingCase": false,
-                    "explainSearch": false,
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical"
-                  }
-                }
-              },
-              {
-                "id": "23d89cd93e63d3dc",
-                "type": "leaf",
-                "state": {
-                  "type": "bookmarks",
-                  "state": {}
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal",
-        "width": 245.5,
-        "collapsed": true
-      },
-      "right": {
-        "id": "30dd81d4e13afc35",
-        "type": "split",
-        "children": [
-          {
-            "id": "9069e576f164acdc",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "ae9eb070472fa448",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "知识点收录/项目经验总结/项目经验总结.md",
-                    "collapseAll": true,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "0e20ef2c63585bbc",
-                "type": "leaf",
-                "state": {
-                  "type": "outgoing-link",
-                  "state": {
-                    "file": "知识点收录/项目经验总结/项目经验总结.md",
-                    "linksCollapsed": false,
-                    "unlinkedCollapsed": true
-                  }
-                }
-              },
-              {
-                "id": "9ae47add6077116d",
-                "type": "leaf",
-                "state": {
-                  "type": "tag",
-                  "state": {
-                    "sortOrder": "frequency",
-                    "useHierarchy": true
-                  }
-                }
-              },
-              {
-                "id": "a4727b220c48a4e2",
-                "type": "leaf",
-                "state": {
-                  "type": "outline",
-                  "state": {
-                    "file": "知识点收录/项目经验总结/项目经验总结.md"
-                  }
-                }
-              },
-              {
-                "id": "268ee39bb7667d37",
-                "type": "leaf",
-                "state": {
-                  "type": "calendar",
-                  "state": {}
-                }
-              }
-            ],
-            "currentTab": 4
-          }
-        ],
-        "direction": "horizontal",
-        "width": 390.5,
-        "collapsed": true
-      },
-      "left-ribbon": {
-        "hiddenItems": {
-          "audio-recorder:开始/结束录音": false,
-          "switcher:打开快速切换": false,
-          "graph:查看关系图谱": false,
-          "canvas:新建白板": false,
-          "daily-notes:打开/创建今天的日记": false,
-          "templates:插入模板": false,
-          "command-palette:打开命令面板": false,
-          "markdown-importer:打开 Markdown 格式转换器": false,
-          "table-editor-obsidian:Advanced Tables Toolbar": false,
-          "templater-obsidian:Templater": false,
-          "omnisearch:Omnisearch": false,
-          "workspaces:管理工作区布局": false
-        }
-      },
-      "active": "61b639027fe5a7ee"
-    },
     "jvm": {
       "main": {
         "id": "5375a37e10c88ed1",
@@ -1261,7 +717,192 @@
         }
       },
       "active": "86a37fb1fb3cbefa"
+    },
+    "algorithm-practice": {
+      "main": {
+        "id": "5375a37e10c88ed1",
+        "type": "split",
+        "children": [
+          {
+            "id": "44715799ee513f6e",
+            "type": "tabs",
+            "dimension": 13.404825737265417,
+            "children": [
+              {
+                "id": "b448afe3e718fa7c",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "computer/algorithm/practice.md"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "d6d415773009a60d",
+            "type": "tabs",
+            "dimension": 86.59517426273459,
+            "children": [
+              {
+                "id": "61b639027fe5a7ee",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "computer/algorithm/practice.md",
+                    "mode": "source",
+                    "source": false
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "c327adb1f0d04063",
+        "type": "split",
+        "children": [
+          {
+            "id": "a94853100bb8b45c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "7e78882e8d757bd8",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "65433080092ade52",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "23d89cd93e63d3dc",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 245.5,
+        "collapsed": true
+      },
+      "right": {
+        "id": "30dd81d4e13afc35",
+        "type": "split",
+        "children": [
+          {
+            "id": "9069e576f164acdc",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "ae9eb070472fa448",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "computer/algorithm/practice.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "0e20ef2c63585bbc",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "computer/algorithm/practice.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "9ae47add6077116d",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "a4727b220c48a4e2",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "computer/algorithm/practice.md"
+                  }
+                }
+              },
+              {
+                "id": "268ee39bb7667d37",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 4
+          }
+        ],
+        "direction": "horizontal",
+        "width": 390.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "audio-recorder:开始/结束录音": false,
+          "switcher:打开快速切换": false,
+          "graph:查看关系图谱": false,
+          "canvas:新建白板": false,
+          "daily-notes:打开/创建今天的日记": false,
+          "templates:插入模板": false,
+          "command-palette:打开命令面板": false,
+          "markdown-importer:打开 Markdown 格式转换器": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "templater-obsidian:Templater": false,
+          "omnisearch:Omnisearch": false,
+          "workspaces:管理工作区布局": false
+        }
+      },
+      "active": "61b639027fe5a7ee",
+      "mtime": "2024-04-02T10:03:47+08:00"
     }
   },
-  "active": "algorithm"
+  "active": "algorithm-practice"
 }

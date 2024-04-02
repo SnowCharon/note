@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 245.5,
+    "collapsed": true
   },
   "right": {
     "id": "30dd81d4e13afc35",
@@ -179,17 +180,17 @@
       "workspaces:管理工作区布局": false
     }
   },
-  "active": "7e78882e8d757bd8",
+  "active": "61b639027fe5a7ee",
   "lastOpenFiles": [
+    "computer/algorithm/algorithm.md",
+    "知识点收录/resume/resume.md",
+    "computer/algorithm/practice.md",
+    "template/algorithm-topic.md",
     "interview/advance/图解系统.pdf",
     "interview/advance/图解redis.pdf",
     "interview/advance/图解网络.pdf",
     "interview/advance",
-    "template/algorithm-topic.md",
-    "computer/algorithm/practice.md",
     "computer/algorithm/assets/Pasted image 20240330165545.png",
-    "computer/algorithm/algorithm.md",
-    "知识点收录/resume/resume.md",
     "computer/algorithm/assets/Pasted image 20240329203925.png",
     "interview/interview.md",
     "english/word/word.md",
@@ -227,7 +228,6 @@
     "知识点收录/resume",
     "知识点收录/MIPS/MIPS.md",
     "知识点收录/MIPS",
-    "java/JVM.zip",
     "未命名.canvas"
   ]
 }
