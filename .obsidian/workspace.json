@@ -4,26 +4,9 @@
     "type": "split",
     "children": [
       {
-        "id": "44715799ee513f6e",
-        "type": "tabs",
-        "dimension": 13.404825737265417,
-        "children": [
-          {
-            "id": "b448afe3e718fa7c",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "computer/algorithm/practice.md"
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "d6d415773009a60d",
         "type": "tabs",
-        "dimension": 86.59517426273459,
+        "dimension": 99.99999999999999,
         "children": [
           {
             "id": "61b639027fe5a7ee",
@@ -31,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "computer/algorithm/practice.md",
+                "file": "知识点收录/resume/resume.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,8 +70,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5,
-    "collapsed": true
+    "width": 245.5
   },
   "right": {
     "id": "30dd81d4e13afc35",
@@ -104,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer/algorithm/practice.md",
+                "file": "知识点收录/resume/resume.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer/algorithm/practice.md",
+                "file": "知识点收录/resume/resume.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer/algorithm/practice.md"
+                "file": "知识点收录/resume/resume.md"
               }
             }
           },
@@ -182,13 +164,13 @@
   },
   "active": "61b639027fe5a7ee",
   "lastOpenFiles": [
+    "computer/algorithm/practice.md",
+    "interview/advance/图解网络.pdf",
+    "interview/advance/图解redis.pdf",
+    "interview/advance/图解系统.pdf",
     "computer/algorithm/algorithm.md",
     "知识点收录/resume/resume.md",
-    "computer/algorithm/practice.md",
     "template/algorithm-topic.md",
-    "interview/advance/图解系统.pdf",
-    "interview/advance/图解redis.pdf",
-    "interview/advance/图解网络.pdf",
     "interview/advance",
     "computer/algorithm/assets/Pasted image 20240330165545.png",
     "computer/algorithm/assets/Pasted image 20240329203925.png",
